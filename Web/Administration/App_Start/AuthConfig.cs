@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Web.WebPages.OAuth;
-using Administration.Models;
+using Yara.Blog.Web.Administration.Models;
 
-namespace Administration
+namespace Yara.Blog.Web.Administration
 {
     public static class AuthConfig
     {

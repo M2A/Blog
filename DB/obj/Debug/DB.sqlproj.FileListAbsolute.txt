@@ -3,3 +3,8 @@ E:\Projects\Blog\Blog\DB\bin\Debug\DB.dll
 E:\Projects\Blog\Blog\DB\bin\Debug\DB.pdb
 E:\Projects\Blog\Blog\DB\obj\Debug\DB.dll
 E:\Projects\Blog\Blog\DB\obj\Debug\DB.pdb
+C:\yaraholding\Blog\DB\bin\Debug\DB.dacpac
+C:\yaraholding\Blog\DB\bin\Debug\DB.dll
+C:\yaraholding\Blog\DB\bin\Debug\DB.pdb
+C:\yaraholding\Blog\DB\obj\Debug\DB.dll
+C:\yaraholding\Blog\DB\obj\Debug\DB.pdb

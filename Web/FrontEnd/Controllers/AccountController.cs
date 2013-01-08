@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using MvcApplication1.Models;
+using Yara.Blog.Web.FrontEnd.Models;
 
-namespace MvcApplication1.Controllers
+namespace Yara.Blog.Web.FrontEnd.Controllers
 {
     public class AccountController : Controller
     {

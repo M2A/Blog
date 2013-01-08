@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace MvcApplication1.Models
+namespace Yara.Blog.Web.FrontEnd.Models
 {
 
     public class ChangePasswordModel

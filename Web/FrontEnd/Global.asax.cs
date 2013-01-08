@@ -6,10 +6,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using MVC_EF_CodeFirst.Models;
+using Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models;
 using Yara.Blog.Infrastructure.Routing;
 
-namespace MvcApplication1
+namespace Yara.Blog.Web.FrontEnd
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801

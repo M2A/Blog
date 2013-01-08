@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MVC_EF_CodeFirst.Models;
+using Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models;
 
 namespace MvcIntro.Controllers
 {

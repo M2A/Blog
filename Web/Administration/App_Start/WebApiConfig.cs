@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace Administration
+namespace Yara.Blog.Web.Administration
 {
     public static class WebApiConfig
     {

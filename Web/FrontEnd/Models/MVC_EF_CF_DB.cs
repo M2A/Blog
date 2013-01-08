@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace MVC_EF_CodeFirst.Models
+namespace Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models
 {
     public class MVC_EF_CF_DB : DbContext
     {

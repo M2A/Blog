@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MVC_EF_CodeFirst.Models
+namespace Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models
 {
     public class author
     {

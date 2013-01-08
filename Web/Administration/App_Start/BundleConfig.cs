@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Administration
+namespace Yara.Blog.Web.Administration
 {
     public class BundleConfig
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVC_EF_CodeFirst.Models
+namespace Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models
 {
     public class post
     {

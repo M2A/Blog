@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MvcApplication1.Controllers
+namespace Yara.Blog.Web.FrontEnd.Controllers
 {
     public class HomeController : Controller
     {

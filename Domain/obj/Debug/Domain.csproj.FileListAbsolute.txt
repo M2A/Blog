@@ -6,3 +6,11 @@ E:\Projects\Blog\Blog\Domain\bin\Debug\EntityFramework.xml
 E:\Projects\Blog\Blog\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 E:\Projects\Blog\Blog\Domain\obj\Debug\Domain.dll
 E:\Projects\Blog\Blog\Domain\obj\Debug\Domain.pdb
+C:\yaraholding\Blog\Domain\bin\Debug\Yara.Blog.Domain.dll.config
+C:\yaraholding\Blog\Domain\bin\Debug\Yara.Blog.Domain.dll
+C:\yaraholding\Blog\Domain\bin\Debug\Yara.Blog.Domain.pdb
+C:\yaraholding\Blog\Domain\bin\Debug\EntityFramework.dll
+C:\yaraholding\Blog\Domain\bin\Debug\EntityFramework.xml
+C:\yaraholding\Blog\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\yaraholding\Blog\Domain\obj\Debug\Yara.Blog.Domain.dll
+C:\yaraholding\Blog\Domain\obj\Debug\Yara.Blog.Domain.pdb
