@@ -1,0 +1,98 @@
+﻿@model MVC_EF_CodeFirst.Models.post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="box-hold group">
+    <article class="entry box format-standard">
+        <div class="entry-intro">
+            <h1>@Model.Title</h1>
+            <span class="entry-meta">
+            Posted by:
+            <strong> author</strong>
+            </span>
+            <a class="single-heart-this" href="#" title="Love this.">
+            <span class="heart-icon"></span>
+            <span class="heart-no">16</span>
+            </a>
+        </div>
+        
+        <div class="entry-content">
+            <p>
+                @Model.Text</p>
+        </div>
+    </article>
+</div>
+
+<div class="box-hold">
+    <div class="box comment-form">
+        <div class="box-content">
+            @{ using (Html.BeginForm("add", "comment", new { postId = Model.postID }, FormMethod.Post))
+               {
+                   @Html.ValidationSummary(true)
+                <h3>
+                    Post your comment</h3>
+
+                <form id="commentform" class="group" action="/">
+                <fieldset class="group">
+                    <p>
+                        <input type="text" title="Your Name"></p>
+                    <p>
+                        <input type="text" name="email" title="Your E-mail"></p>
+                    <p>  <input type="text" name="title" title="Your Subject"></p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <textarea cols="30" rows="4" name="text" title="Your Comment"></textarea></p>
+                </fieldset>
+                <button type="submit">
+                    Submit</button>
+                </form>
+                
+               }
+            }
+        </div>
+    </div>
+    <div class="box post-comments">
+        <div class="box-content">
+            <h3>
+                Comments</h3>
+            @{Html.RenderAction("List", "comment", new { postId = Model.postID });    }
+        </div>
+    </div>
+</div>
+
+
+@*<fieldset>
+    <legend>post</legend>
+
+    <div class="display-label">Title</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">Text</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Text)
+    </div>
+
+    <div class="display-label">authorID</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.authorID)
+    </div>
+
+    <div class="display-label">ImageUrl</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImageUrl)
+    </div>
+
+    <div class="display-label">Created</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Created)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.postID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@

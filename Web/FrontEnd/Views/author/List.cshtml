@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MVC_EF_CodeFirst.Models.author>
+
+@{
+    ViewBag.Title = "لیست نویسندگان وبلاگ";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            firstName
+        </th>
+        <th>
+            lastName
+        </th>
+        <th>
+            enrollmentDate
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.enrollmentDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.authorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.authorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.authorID })
+        </td>
+    </tr>
+}
+
+</table>
