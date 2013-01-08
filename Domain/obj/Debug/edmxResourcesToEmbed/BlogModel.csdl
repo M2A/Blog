@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BlogDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="authors" EntityType="BlogDBModel.author" />
+    <EntitySet Name="comments" EntityType="BlogDBModel.comment" />
+    <EntitySet Name="contactUs" EntityType="BlogDBModel.contactU" />
+    <EntitySet Name="posts" EntityType="BlogDBModel.post" />
+    <AssociationSet Name="FK_dbo_contactUs_dbo_authors_authorID" Association="BlogDBModel.FK_dbo_contactUs_dbo_authors_authorID">
+      <End Role="authors" EntitySet="authors" />
+      <End Role="contactUs" EntitySet="contactUs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_posts_dbo_authors_authorID" Association="BlogDBModel.FK_dbo_posts_dbo_authors_authorID">
+      <End Role="authors" EntitySet="authors" />
+      <End Role="posts" EntitySet="posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_comments_dbo_posts_postID" Association="BlogDBModel.FK_dbo_comments_dbo_posts_postID">
+      <End Role="posts" EntitySet="posts" />
+      <End Role="comments" EntitySet="comments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="author">
+    <Key>
+      <PropertyRef Name="authorID" />
+    </Key>
+    <Property Name="authorID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="firstName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="lastName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="enrollmentDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="contactUs" Relationship="BlogDBModel.FK_dbo_contactUs_dbo_authors_authorID" FromRole="authors" ToRole="contactUs" />
+    <NavigationProperty Name="posts" Relationship="BlogDBModel.FK_dbo_posts_dbo_authors_authorID" FromRole="authors" ToRole="posts" />
+  </EntityType>
+  <EntityType Name="comment">
+    <Key>
+      <PropertyRef Name="commentID" />
+    </Key>
+    <Property Name="commentID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Text" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="postID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="post" Relationship="BlogDBModel.FK_dbo_comments_dbo_posts_postID" FromRole="comments" ToRole="posts" />
+  </EntityType>
+  <EntityType Name="contactU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="reason" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="authorID" Type="Int32" />
+    <NavigationProperty Name="author" Relationship="BlogDBModel.FK_dbo_contactUs_dbo_authors_authorID" FromRole="contactUs" ToRole="authors" />
+  </EntityType>
+  <EntityType Name="post">
+    <Key>
+      <PropertyRef Name="postID" />
+    </Key>
+    <Property Name="postID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Text" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="authorID" Type="Int32" Nullable="false" />
+    <Property Name="ImageUrl" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="author" Relationship="BlogDBModel.FK_dbo_posts_dbo_authors_authorID" FromRole="posts" ToRole="authors" />
+    <NavigationProperty Name="comments" Relationship="BlogDBModel.FK_dbo_comments_dbo_posts_postID" FromRole="posts" ToRole="comments" />
+  </EntityType>
+  <Association Name="FK_dbo_contactUs_dbo_authors_authorID">
+    <End Role="authors" Type="BlogDBModel.author" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="contactUs" Type="BlogDBModel.contactU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="contactUs">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_posts_dbo_authors_authorID">
+    <End Role="authors" Type="BlogDBModel.author" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="posts" Type="BlogDBModel.post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authors">
+        <PropertyRef Name="authorID" />
+      </Principal>
+      <Dependent Role="posts">
+        <PropertyRef Name="authorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_comments_dbo_posts_postID">
+    <End Role="posts" Type="BlogDBModel.post" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="comments" Type="BlogDBModel.comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="posts">
+        <PropertyRef Name="postID" />
+      </Principal>
+      <Dependent Role="comments">
+        <PropertyRef Name="postID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

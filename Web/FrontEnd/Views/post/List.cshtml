@@ -1,0 +1,72 @@
+﻿@model List<MVC_EF_CodeFirst.Models.post>
+
+@{
+    ViewBag.Title = "لیست پستها";
+}
+
+<div class="entry-intro">
+<h2>@ViewBag.Title</h2>
+    </div>
+
+@{ foreach (var item in Model) { 
+       <article class="entry box isotope-item">
+       <div class="entry-content-cnt">
+       <h3 class="entry-desc"><a href="@Url.Action("Details", "post", new { id= item.postID})">@item.Title</a></h3> 
+        <small class="twitter-time">@item.Created</small>
+        </div>
+        </article>
+}}
+<div class="clr"></div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table>
+    <tr>
+        <th>
+            Title
+        </th>
+        <th>
+            Text
+        </th>
+        <th>
+            authorID
+        </th>
+        <th>
+            ImageUrl
+        </th>
+        <th>
+            Created
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.authorID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.postID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.postID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.postID })
+        </td>
+    </tr>
+}
+
+</table>*@

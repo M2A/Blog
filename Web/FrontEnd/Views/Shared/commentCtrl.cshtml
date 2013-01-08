@@ -1,0 +1,21 @@
+﻿@model List<MVC_EF_CodeFirst.Models.comment>
+           <ol id="comment-list" class="group">
+           @{foreach (var item in Model)
+             {
+                 <li class="comment">
+                 <span class="comment-meta">
+                 comment Title:<strong>
+                 @item.Title
+                 </strong>
+                 <time datetime="2012-08-07">
+                 </time>
+                 <text>---</text>
+                 <a class="comment-reply-link" href="">Reply</a>
+                 </span>
+                 <div class="comment-text group">
+               <p>@item.Text</p>
+               </div>
+               </li>
+             }
+               }
+               </ol>

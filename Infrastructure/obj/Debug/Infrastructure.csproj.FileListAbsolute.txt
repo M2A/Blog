@@ -1,0 +1,8 @@
+E:\Projects\Blog\Blog\Infrastructure\bin\Debug\System.Web.Routing.dll
+E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Infrastructure.csproj.GenerateResource.Cache
+E:\Projects\Blog\Blog\Infrastructure\bin\Debug\Yara.Blog.Infrastructure.dll
+E:\Projects\Blog\Blog\Infrastructure\bin\Debug\Yara.Blog.Infrastructure.pdb
+E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.Resources.Messages.resources
+E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.dll
+E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.pdb

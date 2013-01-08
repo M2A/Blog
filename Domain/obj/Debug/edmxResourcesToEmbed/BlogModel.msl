@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogDBModelStoreContainer" CdmEntityContainer="BlogDBEntities">
+    <EntitySetMapping Name="authors">
+      <EntityTypeMapping TypeName="BlogDBModel.author">
+        <MappingFragment StoreEntitySet="authors">
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="enrollmentDate" ColumnName="enrollmentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comments">
+      <EntityTypeMapping TypeName="BlogDBModel.comment">
+        <MappingFragment StoreEntitySet="comments">
+          <ScalarProperty Name="commentID" ColumnName="commentID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="postID" ColumnName="postID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contactUs">
+      <EntityTypeMapping TypeName="BlogDBModel.contactU">
+        <MappingFragment StoreEntitySet="contactUs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="posts">
+      <EntityTypeMapping TypeName="BlogDBModel.post">
+        <MappingFragment StoreEntitySet="posts">
+          <ScalarProperty Name="postID" ColumnName="postID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="authorID" ColumnName="authorID" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,4 @@
+E:\Projects\Blog\Blog\Data\bin\Debug\Yara.Blog.Data.dll
+E:\Projects\Blog\Blog\Data\bin\Debug\Yara.Blog.Data.pdb
+E:\Projects\Blog\Blog\Data\obj\Debug\Yara.Blog.Data.dll
+E:\Projects\Blog\Blog\Data\obj\Debug\Yara.Blog.Data.pdb
