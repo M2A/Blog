@@ -13,7 +13,15 @@ namespace Yara.Blog.Infrastructure.IoC.Installers
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            //container.Register(AllTypes.FromAssemblyNamed);
+            container.Register(AllTypes.FromAssemblyNamed("Yara.Blog.Web.FrontEnd")
+                                       .Where(t => t.Namespace != null && t.Namespace.EndsWith("Controllers"))
+                                       .Configure(c => c.LifestyleTransient())
+                                       .WithService.Self());
+
+            container.Register(AllTypes.FromAssemblyNamed("Yara.Blog.Web.Administration")
+                                           .Where(t => t.Namespace != null && t.Namespace.EndsWith("Controllers"))
+                                           .Configure(c => c.LifestyleTransient())
+                                           .WithService.Self());
         }
     }
 }
