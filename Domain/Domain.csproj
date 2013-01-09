@@ -74,13 +74,9 @@
       <DependentUpon>BlogModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="ViewModels\FrontEnd\AuthorModel\DetailModel.cs" />
-=======
     <Compile Include="ViewModels\FrontEnd\AuthorModel\AuthorViewModel.cs" />
     <Compile Include="ViewModels\FrontEnd\AuthorModel\CreateViewModel.cs" />
     <Compile Include="ViewModels\FrontEnd\AuthorModel\ListViewModel.cs" />
->>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
     <Compile Include="ViewModels\FrontEnd\CommentModels\CommentViewModel.cs" />
     <Compile Include="ViewModels\FrontEnd\CommentModels\CreateViewModel.cs" />
     <Compile Include="ViewModels\FrontEnd\CommentModels\ListViewModel.cs" />
@@ -91,11 +87,7 @@
   <ItemGroup>
     <Folder Include="Constants\" />
     <Folder Include="Enums\" />
-<<<<<<< HEAD
-    <Folder Include="ViewModels\Administration\PostModels\" />
-=======
     <Folder Include="ViewModels\Administration\" />
->>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
     <Folder Include="ViewModels\FrontEnd\AccountModels\" />
   </ItemGroup>
   <ItemGroup>

@@ -8,17 +8,10 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-<<<<<<< HEAD
-using Administration.Filters;
-using Administration.Models;
-
-namespace Administration.Controllers
-=======
 using Yara.Blog.Web.Administration.Filters;
 using Yara.Blog.Web.Administration.Models;
 
 namespace Yara.Blog.Web.Administration.Controllers
->>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
 {
     [Authorize]
     [InitializeSimpleMembership]

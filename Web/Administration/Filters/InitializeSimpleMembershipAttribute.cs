@@ -4,15 +4,9 @@ using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
 using WebMatrix.WebData;
-<<<<<<< HEAD
-using Administration.Models;
-
-namespace Administration.Filters
-=======
 using Yara.Blog.Web.Administration.Models;
 
 namespace Yara.Blog.Web.Administration.Filters
->>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public sealed class InitializeSimpleMembershipAttribute : ActionFilterAttribute
