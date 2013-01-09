@@ -31,10 +31,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
+<<<<<<< HEAD
       <HintPath>..\..\yaraholding\amazon-shipment\Infrastructure\bin\Debug\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Windsor">
       <HintPath>..\..\yaraholding\amazon-shipment\Infrastructure\bin\Debug\Castle.Windsor.dll</HintPath>
+=======
+      <HintPath>..\packages\Castle.Core.3.1.0\lib\net35\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.1.0\lib\net40\Castle.Windsor.dll</HintPath>
+>>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,8 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="IoC\Installers\ControllerFactory.cs" />
     <Compile Include="IoC\StartUp\GuyWire.cs" />
+=======
+    <Compile Include="IoC\Installers\ControllerInstaller.cs" />
+>>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Messages.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -66,7 +77,16 @@
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
+=======
+  <ItemGroup>
+    <Folder Include="IoC\StartUp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+>>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

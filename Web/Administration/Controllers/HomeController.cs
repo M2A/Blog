@@ -4,7 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+<<<<<<< HEAD
 namespace Administration.Controllers
+=======
+namespace Yara.Blog.Web.Administration.Controllers
+>>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
 {
     public class HomeController : Controller
     {

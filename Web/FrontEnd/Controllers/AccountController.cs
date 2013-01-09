@@ -5,9 +5,15 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
+<<<<<<< HEAD
 using MvcApplication1.Models;
 
 namespace MvcApplication1.Controllers
+=======
+using Yara.Blog.Web.FrontEnd.Models;
+
+namespace Yara.Blog.Web.FrontEnd.Controllers
+>>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
 {
     public class AccountController : Controller
     {

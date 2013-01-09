@@ -6,3 +6,7 @@ E:\Projects\Blog\Blog\Infrastructure\bin\Debug\Yara.Blog.Infrastructure.pdb
 E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.Resources.Messages.resources
 E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.dll
 E:\Projects\Blog\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.pdb
+C:\yaraholding\Blog\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\yaraholding\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.Resources.Messages.resources
+C:\yaraholding\Blog\Infrastructure\obj\Debug\Infrastructure.csproj.GenerateResource.Cache
+C:\yaraholding\Blog\Infrastructure\obj\Debug\Yara.Blog.Infrastructure.dll

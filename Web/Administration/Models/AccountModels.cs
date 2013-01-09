@@ -6,7 +6,11 @@ using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
 
+<<<<<<< HEAD
 namespace Administration.Models
+=======
+namespace Yara.Blog.Web.Administration.Models
+>>>>>>> 0359986b98a1f3760886b0d44ce0437ea1f0e886
 {
     public class UsersContext : DbContext
     {
