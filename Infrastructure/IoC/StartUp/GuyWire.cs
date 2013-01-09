@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
+using System.Web.Mvc;
+using Yara.Blog.Infrastructure.IoC.Installers;
 
 namespace Yara.Blog.Infrastructure.IoC.StartUp
 {
-    class GuyWire
+    public class GuyWire
     {
         private IWindsorContainer _container;
 
@@ -34,7 +36,16 @@ namespace Yara.Blog.Infrastructure.IoC.StartUp
         }
         public void RegisterRoot() 
         {
-        
+            ControllerBuilder.Current.SetControllerFactory(new ControllerFactory(_container));
+        }
+
+        public void DeWire() 
+        {
+            if (_container != null)
+            {
+                _container.Dispose();
+            }
+            _container = null;
         }
     }
 }
