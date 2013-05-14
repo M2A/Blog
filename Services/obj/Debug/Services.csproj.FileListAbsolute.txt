@@ -3,3 +3,9 @@ E:\Projects\Blog\Blog\Services\bin\Debug\Services.pdb
 E:\Projects\Blog\Blog\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 E:\Projects\Blog\Blog\Services\obj\Debug\Services.dll
 E:\Projects\Blog\Blog\Services\obj\Debug\Services.pdb
+C:\yaraholding\Blog\Services\bin\Debug\Services.dll
+C:\yaraholding\Blog\Services\bin\Debug\Services.pdb
+C:\yaraholding\Blog\Services\obj\Debug\Services.dll
+C:\yaraholding\Blog\Services\obj\Debug\Services.pdb
+C:\yaraholding\Blog\Services\bin\Debug\LibGit2Sharp.dll
+C:\yaraholding\Blog\Services\bin\Debug\LibGit2Sharp.xml

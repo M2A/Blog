@@ -2,3 +2,9 @@ E:\Projects\Blog\Blog\Utility\bin\Debug\Utility.dll
 E:\Projects\Blog\Blog\Utility\bin\Debug\Utility.pdb
 E:\Projects\Blog\Blog\Utility\obj\Debug\Utility.dll
 E:\Projects\Blog\Blog\Utility\obj\Debug\Utility.pdb
+C:\yaraholding\Blog\Utility\bin\Debug\Utility.dll
+C:\yaraholding\Blog\Utility\bin\Debug\Utility.pdb
+C:\yaraholding\Blog\Utility\obj\Debug\Utility.dll
+C:\yaraholding\Blog\Utility\obj\Debug\Utility.pdb
+C:\yaraholding\Blog\Utility\bin\Debug\LibGit2Sharp.dll
+C:\yaraholding\Blog\Utility\bin\Debug\LibGit2Sharp.xml

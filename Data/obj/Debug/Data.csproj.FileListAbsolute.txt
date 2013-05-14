@@ -2,3 +2,13 @@ E:\Projects\Blog\Blog\Data\bin\Debug\Yara.Blog.Data.dll
 E:\Projects\Blog\Blog\Data\bin\Debug\Yara.Blog.Data.pdb
 E:\Projects\Blog\Blog\Data\obj\Debug\Yara.Blog.Data.dll
 E:\Projects\Blog\Blog\Data\obj\Debug\Yara.Blog.Data.pdb
+C:\yaraholding\Blog\Data\bin\Debug\Yara.Blog.Data.dll
+C:\yaraholding\Blog\Data\bin\Debug\Yara.Blog.Data.pdb
+C:\yaraholding\Blog\Data\obj\Debug\Yara.Blog.Data.dll
+C:\yaraholding\Blog\Data\obj\Debug\Yara.Blog.Data.pdb
+C:\yaraholding\Blog\Data\bin\Debug\Yara.Blog.Data.dll.config
+C:\yaraholding\Blog\Data\bin\Debug\EntityFramework.dll
+C:\yaraholding\Blog\Data\bin\Debug\EntityFramework.xml
+C:\yaraholding\Blog\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\yaraholding\Blog\Data\bin\Debug\LibGit2Sharp.dll
+C:\yaraholding\Blog\Data\bin\Debug\LibGit2Sharp.xml

@@ -4,11 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="5ce263b998f8492287c2758968163c82" Name="Diagram1">
-        <EntityTypeShape EntityType="BlogDBModel.author" Width="1.5" PointX="0.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BlogDBModel.comment" Width="1.5" PointX="2.875" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BlogDBModel.contactU" Width="1.5" PointX="2.875" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="BlogDBModel.post" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+      <Diagram DiagramId="787ba0ad3c6a4ecbaab059287036c1ea" Name="Diagram1">
+        <EntityTypeShape EntityType="BlogDBModel.author" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogDBModel.comment" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogDBModel.contactU" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogDBModel.post" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
         <AssociationConnector Association="BlogDBModel.FK_dbo_contactUs_dbo_authors_authorID" ManuallyRouted="false" />
         <AssociationConnector Association="BlogDBModel.FK_dbo_posts_dbo_authors_authorID" ManuallyRouted="false" />
         <AssociationConnector Association="BlogDBModel.FK_dbo_comments_dbo_posts_postID" ManuallyRouted="false" />

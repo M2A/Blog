@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Objects;
 using System.Linq;
 using System.Text;
@@ -9,28 +10,29 @@ namespace Yara.Blog.Data
 {
     public class Repository<T> : IRepository<T> where T: class
     {
-        protected ObjectContext _context;
-        private IObjectSet<T> _objSet;  
+        protected DbContext _context;
+        private IDbSet<T> _objSet;  
 
-        public Repository(ObjectContext context)
+        public Repository(DbContext context)
         {
             _context = context;
-            _objSet = _context.CreateObjectSet<T>();
+            //_objSet = _context.CreateObjectSet<T>();
+            _objSet = _context.Set<T>();
         }
 
         public T NewEntityInstance()
         {
-            return _context.CreateObject<T>();
+            return _context.Set<T>().Create<T>();            
         }
 
         public void Add(T item)
         {
-            _objSet.AddObject(item);
+            _objSet.Add(item);
         }
 
         public void Remove(T item)
         {
-            _objSet.DeleteObject(item);
+            _objSet.Remove(item);
         }
 
         public T Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
@@ -62,5 +64,13 @@ namespace Yara.Blog.Data
         {
             _context.SaveChanges();
         }
+
+
+
+        public static string Test()
+        {
+            return "This is a test";
+        }
+
     }
 }

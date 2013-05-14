@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Yara.Blog.Domain.ViewModels.FrontEnd.PostModels
 {
-    class ListViewModel
+    public class ListViewModel
     {
         public int postID { get; set; }
         public string Title { get; set; }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models;
 
 namespace Yara.Blog.Web.FrontEnd.Controllers
 {
@@ -11,16 +10,14 @@ namespace Yara.Blog.Web.FrontEnd.Controllers
     {
         //
         // GET: /admin/
-        MVC_EF_CF_DB _db;
 
         public adminController()
         {
-            _db = new MVC_EF_CF_DB();
         }
         public ActionResult GetPostsList()
         {
-            var posts = _db.posts.ToList();
-            return View(posts);
+            //var posts = _db.posts.ToList();
+            return View();
         }
 
         //
@@ -53,7 +50,7 @@ namespace Yara.Blog.Web.FrontEnd.Controllers
             }
             catch
             {
-                return View();
+               return View();
             }
         }
         

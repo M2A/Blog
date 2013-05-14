@@ -1,4 +1,4 @@
-﻿@model Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models.post
+﻿@model Yara.Blog.Domain.ViewModels.FrontEnd.PostModels.PostViewModel
 
 @{
     ViewBag.Title = "Details";
@@ -10,7 +10,7 @@
             <h1>@Model.Title</h1>
             <span class="entry-meta">
             Posted by:
-            <strong> author</strong>
+            <strong> @Model.authorName</strong>
             </span>
             <a class="single-heart-this" href="#" title="Love this.">
             <span class="heart-icon"></span>
@@ -58,7 +58,7 @@
         <div class="box-content">
             <h3>
                 Comments</h3>
-            @{Html.RenderAction("List", "comment", new { postId = Model.postID });    }
+            @*@{Html.RenderAction("List", "comment", new { postId = Model.postID });    }*@
         </div>
     </div>
 </div>

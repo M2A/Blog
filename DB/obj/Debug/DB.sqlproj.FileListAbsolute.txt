@@ -8,3 +8,7 @@ C:\yaraholding\Blog\DB\bin\Debug\DB.dll
 C:\yaraholding\Blog\DB\bin\Debug\DB.pdb
 C:\yaraholding\Blog\DB\obj\Debug\DB.dll
 C:\yaraholding\Blog\DB\obj\Debug\DB.pdb
+C:\yaraholding\Blog\DB\obj\Debug\Model.xml
+C:\yaraholding\Blog\DB\obj\Debug\refactor.xml
+C:\yaraholding\Blog\DB\obj\Debug\postdeploy.sql
+C:\yaraholding\Blog\DB\obj\Debug\predeploy.sql

@@ -3,60 +3,85 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models;
+using Yara.Blog.Data;
+using Yara.Blog.Domain;
+using Yara.Blog.Domain.ViewModels.FrontEnd.PostModels;
 
 namespace Yara.Blog.Web.FrontEnd.Controllers
 {
     public class postController : Controller
     {
-        MVC_EF_CF_DB _db = new MVC_EF_CF_DB();
+        private Repository<post> _postRepository;
+
+        public postController()
+        {
+            _postRepository = new Repository<post>(new BlogDBEntities());
+        }
+
         //
         // GET: /post/
         public ActionResult List()
         {
-            List<post> model = _db.posts.ToList();
-            return View(model);
+            var objPosts = _postRepository.GetAll();
+            List<PostViewModel> posts = new List<PostViewModel>();
+            foreach (var item in objPosts)
+            {
+                PostViewModel post = new PostViewModel();
+                post.postID = item.postID;
+                post.Title = item.Title;
+                post.Text = item.Text;
+                post.authorName = item.author.lastName;
+                post.Created = item.Created;
+                posts.Add(post);
+            }
+            return View(posts);
         }
         //
         // GET: /post/Details/5
         //public ActionResult post(int) 
         //{
-            
+
         //}
         public ActionResult Details(int id)
         {
-            var post = _db.posts.First(p=> p.postID == id);
-            return View(post);
+            post myPost = _postRepository.Get(p => p.postID == id);
+            PostViewModel postView = new PostViewModel()
+            {
+                authorName = myPost.author.lastName,
+                Created =myPost.Created,
+                postID = myPost.postID,
+                Text = myPost.Text,
+                Title = myPost.Title
+            };
+            return View(postView);
         }
         //
         // GET: /post/Create
         [HttpGet]
         public ActionResult Create()
         {
-            var post = new post();
+            var post = new CreateViewModel();
             return View(post);
-        } 
+        }
         //
         // POST: /post/Create
         [HttpPost]
-        [Authorize]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(CreateViewModel post)
         {
             try
             {
-                // TODO: Add insert logic here
-                _db.posts.Add(new post()
+                post myPost = new post()
                 {
-                    Title = Request["title"],
+                    Title = post.Title,
+                    Text = post.Text,
+                    authorID = 1,
                     Created = DateTime.Now,
-                    authorID = Convert.ToInt32(Request["authorID"]),
-                    Text = Request["text"],
-                    ImageUrl = ""
-                });
-                _db.SaveChanges();
+                };
+                _postRepository.Add(myPost);
+                _postRepository.Save();
                 return RedirectToAction("List");
             }
-            catch
+            catch(Exception ex)
             {
                 return View();
             }

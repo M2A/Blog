@@ -1,5 +1,7 @@
-C:\yaraholding\Blog\Web\FrontEnd\bin\MvcApplication1.dll
-C:\yaraholding\Blog\Web\FrontEnd\bin\MvcApplication1.pdb
+C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Web.FrontEnd.dll
+C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Web.FrontEnd.pdb
+C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Core.dll
+C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Windsor.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.Helpers.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.Mvc.dll
@@ -8,10 +10,13 @@ C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.WebPages.Deployment.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.WebPages.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.WebPages.Razor.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Data.dll
+C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Domain.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Infrastructure.dll
 C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Data.pdb
+C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Domain.pdb
 C:\yaraholding\Blog\Web\FrontEnd\bin\Yara.Blog.Infrastructure.pdb
-C:\yaraholding\Blog\Web\FrontEnd\bin\EntityFramework.xml
+C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Core.xml
+C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Windsor.xml
 C:\yaraholding\Blog\Web\FrontEnd\bin\Microsoft.Web.Infrastructure.xml
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.Helpers.xml
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.Mvc.xml
@@ -20,9 +25,5 @@ C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.WebPages.xml
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.WebPages.Deployment.xml
 C:\yaraholding\Blog\Web\FrontEnd\bin\System.Web.WebPages.Razor.xml
 C:\yaraholding\Blog\Web\FrontEnd\obj\Debug\FrontEnd.csprojResolveAssemblyReference.cache
-C:\yaraholding\Blog\Web\FrontEnd\obj\Debug\MvcApplication1.dll
-C:\yaraholding\Blog\Web\FrontEnd\obj\Debug\MvcApplication1.pdb
-C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Core.dll
-C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Windsor.dll
-C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Core.xml
-C:\yaraholding\Blog\Web\FrontEnd\bin\Castle.Windsor.xml
+C:\yaraholding\Blog\Web\FrontEnd\obj\Debug\Yara.Blog.Web.FrontEnd.dll
+C:\yaraholding\Blog\Web\FrontEnd\obj\Debug\Yara.Blog.Web.FrontEnd.pdb

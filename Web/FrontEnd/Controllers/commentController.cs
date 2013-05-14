@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Yara.Blog.Web.FrontEnd.MVC_EF_CodeFirst.Models;
+using Yara.Blog.Data;
+using Yara.Blog.Domain;
 
 namespace MvcIntro.Controllers
 {
     public class commentController : Controller
     {
-        MVC_EF_CF_DB _db;
+
+        private Repository<comment> _commentRepository;
+        
         
         public commentController()
         {
-            _db = new MVC_EF_CF_DB();
+            _commentRepository = new Repository<comment>(new BlogDBEntities());
         }
         //
         // GET: /comment/
@@ -21,7 +24,7 @@ namespace MvcIntro.Controllers
         public ActionResult List(long postId)
         {
             // "commentCtrl" is PartialView name
-            return PartialView("commentCtrl", _db.comments.Where(c => c.postID == postId).ToList());
+            return PartialView("commentCtrl", _commentRepository.GetAll(cmnt => cmnt.postID == postId));
         }
         [HttpPost]
         public ActionResult add(int postId, comment newComment)

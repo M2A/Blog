@@ -11,6 +11,8 @@ C:\yaraholding\Blog\Domain\bin\Debug\Yara.Blog.Domain.dll
 C:\yaraholding\Blog\Domain\bin\Debug\Yara.Blog.Domain.pdb
 C:\yaraholding\Blog\Domain\bin\Debug\EntityFramework.dll
 C:\yaraholding\Blog\Domain\bin\Debug\EntityFramework.xml
-C:\yaraholding\Blog\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\yaraholding\Blog\Domain\obj\Debug\Yara.Blog.Domain.dll
 C:\yaraholding\Blog\Domain\obj\Debug\Yara.Blog.Domain.pdb
+C:\yaraholding\Blog\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\yaraholding\Blog\Domain\bin\Debug\LibGit2Sharp.dll
+C:\yaraholding\Blog\Domain\bin\Debug\LibGit2Sharp.xml
