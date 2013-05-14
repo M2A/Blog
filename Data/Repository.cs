@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Yara.Blog.Data
 {
-    public class Repository<T> : IRepository<T> where T: class
+    public class Repository<T> : IRepository<T> where T : class
     {
         protected DbContext _context;
-        private IDbSet<T> _objSet;  
+        private IDbSet<T> _objSet;
 
         public Repository(DbContext context)
         {
@@ -22,7 +22,7 @@ namespace Yara.Blog.Data
 
         public T NewEntityInstance()
         {
-            return _context.Set<T>().Create<T>();            
+            return _context.Set<T>().Create<T>();
         }
 
         public void Add(T item)
@@ -69,8 +69,11 @@ namespace Yara.Blog.Data
 
         public static string Test()
         {
-            return "This is a test";
+            int i = 1;
+            return "This is a test";    
         }
 
     }
+
+
 }
